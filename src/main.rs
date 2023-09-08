@@ -12,8 +12,8 @@ use std::{
     {io, thread},
 };
 
-use invaders::{
-    frame::{self, new_frame, Drawable, Frame},
+use snake::{
+    frame::{new_frame, Drawable, Frame},
     invaders::Invaders,
     level::Level,
     menu::Menu,
@@ -23,7 +23,7 @@ use invaders::{
 };
 
 fn render_screen(render_rx: Receiver<Frame>) {
-    let mut last_frame = frame::new_frame();
+    let mut last_frame = new_frame();
     let mut stdout = io::stdout();
     render::render(&mut stdout, &last_frame, &last_frame, true);
     while let Ok(curr_frame) = render_rx.recv() {

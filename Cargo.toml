@@ -1,11 +1,11 @@
 [package]
-name = "invaders"
+name = "snake"
 version = "0.1.0"
-authors = [ "Nathan Stocks <nathan@agileperception.com>" ]
-edition = "2018"
-description = "Open source terminal arcade game with audio - based off of the classic 'Space Invaders'"
-homepage = "https://github.com/CleanCut/invaders"
-repository = "https://github.com/CleanCut/invaders"
+authors = [ "Dylan Park <dylan.park@att.net>", "Nathan Stocks <nathan@agileperception.com>" ]
+edition = "2021"
+description = "Open source terminal arcade game with audio - based off of the classic 'Snake'"
+homepage = "https://github.com/dylan-park/r_snake"
+repository = "https://github.com/dylan-park/r_snake"
 readme = "README.md"
 keywords = [ "terminal", "game", "audio", "rusty" ]
 categories = [ "games", "command-line-utilities" ]
